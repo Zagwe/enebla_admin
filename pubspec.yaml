@@ -41,6 +41,7 @@ dependencies:
   firebase_auth: ^4.2.9
   firebase_core: ^2.7.0
   cloud_firestore: ^4.4.3
+  modal_bottom_sheet: ^2.1.2
 
 dev_dependencies:
   flutter_test:
