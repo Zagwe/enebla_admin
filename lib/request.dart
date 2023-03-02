@@ -102,7 +102,7 @@ class _RequestState extends State<Request> {
                                                   children: [
                                                     Text('username'),
                                                     Text(
-                                                        "${userInfo!['firstname']} ${userInfo['lastname']}")
+                                                        "${userInfo['firstname']} ${userInfo['lastname']}")
                                                   ],
                                                 ),
                                                 //phone number
