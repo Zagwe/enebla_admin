@@ -1,10 +1,12 @@
-import 'package:enebla_admin/screens/home/AccountSetting.dart';
-import 'package:enebla_admin/screens/home/customer_list.dart';
-import 'package:enebla_admin/screens/home/homescreen.dart';
-import 'package:enebla_admin/screens/home/request.dart';
-import 'package:enebla_admin/screens/home/user_list.dart';
+import 'package:enebla_admin/request.dart';
+
+import 'package:enebla_admin/user_list.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:flutter/material.dart';
+
+import 'AccountSetting.dart';
+import 'customer_list.dart';
+import 'homescreen.dart';
 
 class EneblaAdminHome extends StatefulWidget {
   const EneblaAdminHome({super.key});
@@ -15,6 +17,7 @@ class EneblaAdminHome extends StatefulWidget {
 
 class _EneblaAdminHomeState extends State<EneblaAdminHome> {
   int _currentIndex = 0;
+
   late PageController _pageController;
 
   int _selectedIndex = 0;

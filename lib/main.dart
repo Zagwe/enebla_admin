@@ -1,9 +1,12 @@
-import 'package:enebla_admin/screens/home/admin_home.dart';
-import 'package:enebla_admin/screens/home/homescreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'admin_home.dart';
+
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp().then((value) => print('initiazization done'));
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -1,7 +1,8 @@
-import 'package:enebla_admin/screens/home/customer_list.dart';
-import 'package:enebla_admin/screens/home/request.dart';
-import 'package:enebla_admin/screens/home/user_list.dart';
+import 'package:enebla_admin/request.dart';
+import 'package:enebla_admin/user_list.dart';
 import 'package:flutter/material.dart';
+
+import 'customer_list.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
