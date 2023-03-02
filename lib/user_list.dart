@@ -45,27 +45,58 @@ class _User extends State<User> {
                       //user name
                       Row(
                         children: [
-                          Text(
-                            'username:  '.toUpperCase(),
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.bold),
+                          CircleAvatar(
+                            radius: 30,
+                            backgroundImage: NetworkImage(customer['photoUrl']),
                           ),
-                          Text("${customer['firstname']} "),
-                          Text(customer['lastname']),
+                          SizedBox(
+                            width: 20,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                children: [
+                                  Text(
+                                    'username:  '.toUpperCase(),
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text("${customer['firstname']} "),
+                                  Text(customer['lastname']),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Text(
+                                    'email: '.toUpperCase(),
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(customer['email'])
+                                ],
+                              ),
+
+                              //phone number
+
+                              Row(
+                                children: [
+                                  Text(
+                                    'phone number'.toUpperCase(),
+                                    style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(customer['phonenumber']),
+                                ],
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                       //email
-                      Row(
-                        children: [Text('email: '), Text(customer['email'])],
-                      )
-                      //phone number
-                      ,
-                      Row(
-                        children: [
-                          Text('phone number'),
-                          Text(customer['phonenumber'])
-                        ],
-                      )
                     ],
                   ),
                 );

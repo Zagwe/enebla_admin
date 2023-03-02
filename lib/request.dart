@@ -197,29 +197,71 @@ class _RequestState extends State<Request> {
                                                       //username
                                                       Row(
                                                         children: [
-                                                          const Text(
-                                                              'username'),
                                                           Text(
-                                                              "${userInfo['firstname']} ${userInfo['lastname']}")
+                                                            'username  :'
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 12,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          Text(
+                                                            "${userInfo['firstname']} ${userInfo['lastname']}"
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 13,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          )
                                                         ],
                                                       ),
                                                       //phone number
                                                       Row(
                                                         children: [
-                                                          const Text(
-                                                              'user phonenumber '),
                                                           Text(
-                                                              '${userInfo['phonenumber']}')
+                                                            'user phonenumber  :'
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 12,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          Text(
+                                                            '${userInfo['phonenumber']}'
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 13,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          )
                                                         ],
                                                       )
                                                       //user email
                                                       ,
                                                       Row(
                                                         children: [
-                                                          const Text(
-                                                              'user email '),
                                                           Text(
-                                                              '${userInfo['email']}')
+                                                            'user email  :'
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 13,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          Text(
+                                                            '${userInfo['email']}'
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 12,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          )
                                                         ],
                                                       )
 
@@ -227,10 +269,24 @@ class _RequestState extends State<Request> {
                                                       ,
                                                       Row(
                                                         children: [
-                                                          const Text(
-                                                              'resturant name'),
                                                           Text(
-                                                              "${resturantInfo!['name']}")
+                                                            'resturant name  :'
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 13,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          ),
+                                                          Text(
+                                                            "${resturantInfo!['name']}"
+                                                                .toUpperCase(),
+                                                            style: const TextStyle(
+                                                                fontSize: 12,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .bold),
+                                                          )
                                                         ],
                                                       ),
                                                     ]),

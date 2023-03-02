@@ -17,12 +17,7 @@ class HomePage extends StatelessWidget {
     "assets/home.jpg",
     "assets/home.jpg"
   ];
-  List<String> homeCardLinks = [
-    'MenuList()',
-    "assets/home.jpg",
-    "assets/home.jpg",
-    "assets/home.jpg"
-  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
